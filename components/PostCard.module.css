@@ -1,0 +1,23 @@
+.card {
+  margin: 1rem;
+  padding: 2px 20px;
+  text-align: left;
+  color: white;
+  text-decoration: none;
+  border-radius: 10px;
+  background-color: #0160b2;
+  transition: color 0.15s ease, border-color 0.15s ease;
+}
+.info:hover {
+  cursor: pointer;
+}
+
+.delete_card {
+  color: white;
+  width: 70px;
+  margin-left: 460px;
+  cursor: pointer;
+}
+.delete_card:hover {
+  color: red;
+}
