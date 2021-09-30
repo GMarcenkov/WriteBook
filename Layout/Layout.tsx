@@ -1,16 +1,16 @@
 import { NextPage } from "next";
 import style from "./Layout.module.css";
-import Link from "next/Link";
+// import Link from "next/Link";
 const Layout: NextPage = ({ children }) => {
   return (
     <>
       <header className={style.header}>
-        <Link href="/">
+        <a href="/">
           <h1 style={{ cursor: "pointer" }}>writebook</h1>
-        </Link>
-        <Link href="/post/create">
+        </a>
+        <a href="/post/create">
           <div className={style.create_post}>Create Post</div>
-        </Link>
+        </a>
       </header>
       <div className={style.container}>{children}</div>
 

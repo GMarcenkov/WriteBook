@@ -1,6 +1,6 @@
 import type { NextPage } from "next";
 import styles from "./PostCard.module.css";
-import Link from "next/Link";
+// import Link from "next/Link";
 type Props = {
   post: {
     id: string;
@@ -16,12 +16,12 @@ const PostCard: NextPage<Props> = ({ post, handleDeletePost }) => {
 
   return (
     <div className={styles.card}>
-      <Link href={`/post/${id}`}>
+      <a href={`/post/${id}`}>
         <div className={styles.info}>
           <h2>{title} &rarr;</h2>
           <p>{description}</p>
         </div>
-      </Link>
+      </a>
       <div className={styles.delete_card} onClick={() => handleDeletePost(id)}>
        Delete
       </div>
